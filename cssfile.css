@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    color: black;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: start;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.logo{
+    text-decoration: none;
+    margin: 0 15px;
+}
+.links{
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.8s, transform 0.3s ease-in;
+}
+.links:hover{
+    color: orange;
+    transform: scale(1,1);
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+footer .license {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
