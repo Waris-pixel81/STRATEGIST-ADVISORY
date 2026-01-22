@@ -12,40 +12,43 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header" col-12>
-        <div>
-            <a href="/STRATEGIST-ADVISORY/Accueil.html" class="logo">
-                <h4 style="color: black;">STRATEGIST</h4>
-                <h4 style="color: orange;">ADVISORY</h4>
-            </a>
-        </div>
-        <div>
-            <a href="../STRATEGIST-ADVISORY/Accueil.html" class="links" style="color: orange;">Accueil</a>
-            <a href="" class="links">Services</a>
-            <a href="../STRATEGIST-ADVISORY/A-Propos.html" class="links">A Propos</a>
-            <a href="../STRATEGIST-ADVISORY/Recrutement.html" class="links">Recrutement</a>
-            <a href="" class="links">Blog</a>
-            <a href="" class="links">Nous contacter</a>
-        </div>
-    </header>
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero">
+    <section class="hero-section" id="hero">
+        <!-- canvas p5 -->
+        <!-- p5 va l’injecter ici -->
+        <header class="header">
+            <div>
+                <a href="/STRATEGIST-ADVISORY/Accueil.html" class="logo">
+                    <h5 style="color: white;">STRATEGIST</h5>
+                    <h5 style="color: orange;">ADVISORY</h5>
+                </a>
+            </div>
+            <div>
+                <a href="../STRATEGIST-ADVISORY/Accueil.html" class="links" style="color: orange;">Accueil</a>
+                <a href="#A-Propos" class="links">A Propos</a>
+                <a href="#services" class="links">Services</a>
+                <a href="#Recrutement" class="links">Recrutement</a>
+                <a href="../STRATEGIST-ADVISORY/Blog.html" class="links">Blog</a>
+                <a href="../STRATEGIST-ADVISORY/contact.html" class="links">Nous contacter</a>
+            </div>
+        </header>
+
+        <!-- contenu hero -->
+        <div class="hero-content">
             <h1>Bienvenue chez STRATEGIST ADVISORY</h1>
-            <p>Votre partenaire de confiance pour des solutions stratégiques innovantes.</p>
-            <a href="#contact" class="btn btn-primary">Contactez-Nous</a>
+            <h3>Expertise en conseil SI, Data/IA,Analytics...</h3>
         </div>
     </section>
+
     <!-- A Propos Section -->
     <br><br>
-    <section class="a-propos-section">
+    <section class="a-propos-section" id="A-Propos">
         <br><br>
-        <div class="container col-md-6 offset-md-2" data-aos="fade-up" >
-            <h2>A Propos de Nous</h2>
+        <div class="container col-md-6 offset-md-2" data-aos="fade-up">
+            <h1>A Propos de Nous</h1>
             <br>
             <h3>
-                Strategist Advisory est une société de conseil stratégique spécialisée dans les domaines de
+                Strategist Advisory est une société de conseil spécialisée dans les domaines de
                 l'informatique et de la transformation digitale.
                 Notre expertise se déploie à travers divers domaines, avec un engagement fort envers la transformation
                 digitale grâce à une combinaison unique d’expertises métiers approfondie et de compétences
@@ -62,7 +65,7 @@
                     <h3>Méthodologies Agile et DevOps</h3>
                 </li>
                 <li>
-                    <h3>Support et maintenance continue</h3>
+                    <h3>Ingénierie DATA OPS / FINOPS / SYSOPS / Cloud DATA </h3>
                 </li>
                 <li>
                     <h3>ROI mesurable et transparence totale</h3>
@@ -71,34 +74,33 @@
         </div>
         <br>
         <div class="container col-md-6 offset-md-2">
-            <h3>
-                Notre expertise se déploie à travers divers domaines, avec un engagement fort envers la transformation
-                digitale grâce à une combinaison unique d’expertises métiers approfondie et de compétences
-                technologiques.
-            </h3>
         </div>
     </section>
 
     <!-- services -->
-    <section class="services-section">
+    <section class="services-section" id="services">
         <div class="services-container">
             <div class="row">
-                <div class="services-card col-4 border" data-aos="fade-up">
+                <br>
+                <h1 class="col-11 offset-md-1">Nos Services</h1>
+                <div class="services-card col-4 border mt-3" data-aos="fade-up">
                     <div>
                         <img src="/STRATEGIST-ADVISORY/img stock/cloud_178369.png" alt="">
                     </div>
                     <div>
                         <h3>Cloud</h3>
-                        <p>Conception et migration vers des solutions cloud sécurisées et scalables (AWS, Azure, GCP).</p>
+                        <p>Conception et migration vers des solutions cloud sécurisées et scalables (AWS, Azure, GCP).
+                        </p>
                     </div>
                 </div>
-                <div class="services-card col-4 border" data-aos="fade-up" data-aos-delay="300">
+                <div class="services-card col-4 border mt-3" data-aos="fade-up" data-aos-delay="300">
                     <div>
                         <img src="/STRATEGIST-ADVISORY/img stock/shield_4021445.png" alt="">
                     </div>
                     <div>
                         <h3>Cybersécurité</h3>
-                        <p>Audit de sécurité, conformité RGPD et mise en place de stratégies de protection des données.</p>
+                        <p>Audit de sécurité, conformité RGPD et mise en place de stratégies de protection des données.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -118,8 +120,8 @@
                         <img src="/STRATEGIST-ADVISORY/img stock/codage.png" alt="">
                     </div>
                     <div>
-                        <h3>dev</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, sunt?</p>
+                        <h3>Conception d'application</h3>
+                        <p>Des applications qui répondent à vos enjeux métiers.</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +133,7 @@
                     </div>
                     <div>
                         <h3>Data/IA</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ullam.</p>
+                        <p>Des solutions data pensées pour vos enjeux métiers.</p>
                     </div>
                 </div>
                 <div class="services-card col-4 border" data-aos="fade-up" data-aos-delay="300">
@@ -140,19 +142,68 @@
                     </div>
                     <div>
                         <h3>DataOps</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eius.</p>
+                        <p>Automatiser, fiabiliser, industrialiser vos flux data.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Article -->
+    <section class="article-section" data-aos="fade-up">
+        <h1 class="col-4 offset-md-1">Derniers Articles</h1>
+        <div class="articles-container">
+
+            <div class="article-card col-md-3 border mt-3" data-aos="fade-up">
+                <div>
+                    <img src="/STRATEGIST-ADVISORY/img stock/Why-Data-Ownership-is-Hard.png.webp" alt="">
+                </div>
+                <div>
+                    <h3>Qu’est-ce qu’un Data Owner</h3>
+                    <p>Découvrez quel est le rôle d’un Data Owner dans une organisation.</p>
+                </div>
+                <a href="" class="voir-plus">Voir l'article</a>
+            </div>
+
+            <div class="article-card col-md-3 border mt-3" data-aos="fade-up">
+                <div>
+                    <img src="/STRATEGIST-ADVISORY/img stock/article1.png" alt="">
+                </div>
+                <div class="">
+                    <h3>Comment la transformation digitale révolutionne le secteur financier</h3>
+                    <p>Découvrez comment les institutions financières adoptent les technologies numériques pour
+                        améliorer l'expérience client, optimiser les opérations et renforcer la sécurité.</p>
+                </div>
+                <a href="" class="voir-plus">Voir l'article</a>
+            </div>
+
+            <div class="article-card col-md-3 border mt-3" data-aos="fade-up">
+                <div>
+                    <img src="/STRATEGIST-ADVISORY/img stock/article1.png" alt="">
+                </div>
+                <div>
+                    <h3>Comment la transformation digitale révolutionne le secteur financier</h3>
+                    <p>Découvrez comment les institutions financières adoptent les technologies numériques pour
+                        améliorer l'expérience client, optimiser les opérations et renforcer la sécurité.</p>
+                </div>
+                <a href="" class="voir-plus">Voir l'article</a>
+            </div>
+        </div>
+    </section>
 
 
-    <!-- Formulaire de contact -->
-    <section class="contact-section" data-aos="fade-up" id="contact">
-        <div class="container">
-            <div class="contact-form col-md-6 offset-md-3 mt-5">
+    <!-- Formulaire de recrutement -->
+    <section class="Recrutement-section" data-aos="fade-up" id="Recrutement">
+        <h1 class="col-4 offset-md-1">Recrutement</h1>
+
+        <div class="container-contact border col-md-10">
+            <div class="contact-info col-md-4">
+                <h2>Vous voulez nous rejoindre?</h2>
+                <h4>Nous sommes sans cesse a la recherche de nouveau talents au sein de notre équipe alors pourquoi pas
+                    vous?</h4>
+            </div>
+            
+            <div class="contact-form col-md-5">
                 <h2>Contactez-Nous</h2>
                 <form action="#" method="post">
                     <div class="mb-3">
@@ -170,11 +221,7 @@
                     <button type="submit" class="btn btn-primary">Envoyer</button>
                 </form>
             </div>
-            <div class="contact-info col-md-6 offset-md-3 mt-5">
-                <h3>Informations de Contact</h3>
-                <p>Email:
 
-            </div>
         </div>
     </section>
     <footer class="footer">
@@ -185,8 +232,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+    <script src="jsfile.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
     <script>
         AOS.init();
     </script>
