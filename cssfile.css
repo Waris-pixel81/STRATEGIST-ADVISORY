@@ -1,7 +1,10 @@
-
-body{
+body {
     margin: 0;
     padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 section {
@@ -26,7 +29,7 @@ section {
 .header {
     position: sticky;
     top: 0;
-    background-color:  #f8f9fb;
+    background-color: #f8f9fb;
     color: white;
     padding-left: 1%;
     padding-right: 1%;
@@ -36,6 +39,7 @@ section {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .header-blog {
@@ -109,6 +113,7 @@ section {
     padding-right: 5%;
     background-color: #f8f9fb;
 }
+
 .section-title {
     font-weight: 700;
     margin-bottom: 30px;
@@ -172,13 +177,9 @@ section {
     padding-right: 5%;
     background-color: #f8f9fb;
 }
+
 .services-container {
     justify-content: center;
-}
-
-.services-container .row {
-    display: flex;
-    gap: 20px;
 }
 
 .services-box {
@@ -186,8 +187,6 @@ section {
 }
 
 .services-card.border {
-    width: 500px;
-    height: 150px;
     padding-top: 15px;
     display: flex;
     border-radius: 10px;
@@ -206,10 +205,12 @@ section {
     padding-right: 5%;
     background-color: #f8f9fb;
 }
+
 .valeur-container {
     justify-content: space-evenly;
     display: flex;
 }
+
 .valeurs-card {
     display: flex;
     flex-direction: column;
@@ -219,6 +220,7 @@ section {
     gap: 20px;
     border-radius: 10px;
 }
+
 .valeurs-card img {
     width: 80px;
     height: 80px;
@@ -232,6 +234,7 @@ section {
     padding-right: 5%;
     background-color: #f8f9fb;
 }
+
 .articles-container {
     padding: 50px 20px;
     justify-content: space-evenly;
@@ -253,6 +256,7 @@ section {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: 15px;
+    background-color: #f8f9fb;
 }
 
 .article-card h3,
@@ -309,6 +313,7 @@ section {
 .contact-info p {
     color: #555;
     line-height: 1.6;
+    font-size: 20px;
 }
 
 .contact-form {
@@ -318,6 +323,53 @@ section {
 .contact-form h2 {
     margin-bottom: 25px;
     font-weight: 600;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-file {
+  height: 46px; /* même hauteur que les inputs */
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.label-file img {
+  width: 20px;
+}
+.input-file {
+  display: none;
+}
+
+.label-file {
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.labeler {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
 }
 
 .form-group {
@@ -330,16 +382,14 @@ section {
     font-weight: 500;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    font-size: 15px;
-    transition: border 0.3s, box-shadow 0.3s;
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
 }
-
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
@@ -387,7 +437,6 @@ section {
 footer {
     background-color: #000000;
     padding: 20px 0;
-    margin-top: 20px;
 }
 
 .footer-container {
@@ -404,6 +453,7 @@ footer {
     padding-left: 5%;
 
 }
+
 .footer-hero h4 {
     font-size: 20px;
     color: orange;
@@ -412,8 +462,10 @@ footer {
 .footer-hero h2 {
     font-size: 37px;
     margin: 10px 0;
+    width: 80%;
     color: white;
 }
+
 .footer-hero button {
     background-color: orange;
     color: white;
@@ -424,10 +476,13 @@ footer {
     font-size: 16px;
     margin-top: 15px;
 }
+
 .footer-links {
     display: flex;
     gap: 40px;
+    margin-right: 5%;
 }
+
 .footer-links a {
     display: flex;
     color: white;
@@ -445,4 +500,8 @@ footer p {
     font-size: 14px;
     text-decoration: none;
     margin: 0%;
+}
+.wip{
+    justify-content: center;
+    height: 90vh;
 }
