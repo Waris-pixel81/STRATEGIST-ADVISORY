@@ -5,42 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>STRATEGIST ADVISORY</title>
-
-    <meta name="description"
-        content="Strategist Advisory est un cabinet de conseil spécialisé en SI, Data, Cloud et transformation digitale. Accompagnement sur mesure et expertise métier.">
-
-    <meta name="robots" content="index, follow">
-
+    <title>Cabinet de conseil SI | Data, Cloud & Cybersécurité – Strategist Advisory</title>
     <!-- Open Graph (réseaux sociaux) -->
     <meta property="og:title" content="Strategist Advisory">
-    <meta property="og:description" content="Expertise en conseil SI, Data, IA, Cloud et transformation digitale.">
+    <meta property="og:description" content="Strategist Advisory est un cabinet de conseil spécialisé en SI, Data, Cloud et transformation digitale. Accompagnement sur mesure et expertise métier.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.strategist-advisory.io/">
-    <meta property="og:image" content="TBD">
+    <meta property="og:site_name" content="STRATEGIST ADVISORY">
     <link rel="canonical" href="https://www.strategist-advisory.io/">
-
+    <meta name="description" content="Strategist Advisory est un cabinet de conseil en systèmes d’information à Paris. Expertise en Data, Cloud, Cybersécurité et transformation digitale.">
     <!-- CSS -->
     <link rel="stylesheet" href="../STRATEGIST-ADVISORY/cssfile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="/STRATEGIST-ADVISORY/jsfile.js"></script>
 </head>
 
 <body>
+    <!--header-->
+    <div class="menu-mobile">
+        <span class="material-icons" onclick="toggler()" id="toggler">
+            menu
+        </span>
+    </div>
     <header class="header">
         <div>
-            <a href="/STRATEGIST-ADVISORY/Accueil.html" class="logo">
-                <h5 style="color: black;">STRATEGIST</h5>
-                <h5 style="color: orange;">ADVISORY</h5>
+            <a href="/STRATEGIST-ADVISORY/Accueil.html" class="logo" tabindex="-1">
+                <h5 style="color: black;"><strong>STRATEGIST</strong><br><Strong
+                        style="color: orange;">ADVISORY</Strong></h5>
             </a>
         </div>
-        <div>
-            <a href="../STRATEGIST-ADVISORY/Accueil.html" class="links" style="color: orange;">Accueil</a>
-            <a href="#A-Propos" class="links">A propos</a>
-            <a href="#services" class="links">Services</a>
-            <a href="#Recrutement" class="links">Recrutement</a>
-            <a href="../STRATEGIST-ADVISORY/Blog.html" class="links">Blog</a>
-            <a href="../STRATEGIST-ADVISORY/contact.html" class="links">Nous contacter</a>
+        <div class="links-container">
+            <a href="../STRATEGIST-ADVISORY/Accueil.html" class="links" style="color: orange;" tabindex="1">Accueil</a>
+            <a href="#A-Propos" class="links" tabindex="2">A propos</a>
+            <a href="#Services" class="links" tabindex="3">Services</a>
+            <a href="#Recrutement" class="links" tabindex="4">Recrutement</a>
+            <a href="../STRATEGIST-ADVISORY/Blog.html" class="links" tabindex="5">Blog</a>
+            <a href="../STRATEGIST-ADVISORY/contact.html" class="links" tabindex="6">Nous contacter</a>
         </div>
     </header>
 
@@ -55,14 +57,15 @@
 
 
     <!-- A Propos Section -->
-    <section class="a-propos-section" id="A-Propos">
+    <section class="a-propos-section" id="A-Propos" tabindex="7">
         <h2 class="section-title" data-aos="fade-up" data-aos-once="true">À propos de nous</h2>
         <div class="about-container" data-aos="fade-up" data-aos-once="true">
             <div class="a-propos-content">
                 <div class="a-propos-texts">
                     <p>
-                        Strategist Advisory est un cabinet de conseil spécialisé en systèmes d’information
-                        et en transformation digitale. Nous accompagnons les entreprises dans la conception,
+                        Strategist Advisory est un cabinet de conseil situé à Paris, spécialisé en systèmes
+                        d’information et en transformation digitale. Nous accompagnons les entreprises dans la
+                        conception,
                         la mise en œuvre et l’optimisation de solutions technologiques à forte valeur ajoutée.
                     </p>
 
@@ -86,13 +89,14 @@
 
 
     <!-- services -->
-    <section class="services-section" id="services">
+    <section class="services-section" id="Services" tabindex="8"> 
         <div class="services-container">
             <h2 class="section-title" data-aos="fade-up" data-aos-once="true">Nos Services</h2>
             <div class="services-box row">
-                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up">
+                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up" data-aos-once="true">
                     <div>
-                        <img src="/STRATEGIST-ADVISORY/img-stock/cloud.png" alt="">
+                        <img src="/STRATEGIST-ADVISORY/img-stock/cloud.png"
+                            alt="Icône représentant un service de conseil en cloud computing AWS Azure et GCP">
                     </div>
                     <div>
                         <h3>Cloud</h3>
@@ -100,9 +104,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up">
+                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up" data-aos-once="true">
                     <div>
-                        <img src="/STRATEGIST-ADVISORY/img-stock/shield.png" alt="">
+                        <img src="/STRATEGIST-ADVISORY/img-stock/shield.png"
+                            alt="Icône de cybersécurité illustrant la protection des données et des systèmes d’information">
                     </div>
                     <div>
                         <h3>Cybersécurité</h3>
@@ -110,36 +115,40 @@
                         </p>
                     </div>
                 </div>
-                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up">
+                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up" data-aos-once="true">
                     <div>
-                        <img src="/STRATEGIST-ADVISORY/img-stock/group.png" alt="">
+                        <img src="/STRATEGIST-ADVISORY/img-stock/group.png"
+                            alt="Icône de gestion de projet SI avec méthodologies Agile et ITIL">
                     </div>
                     <div>
                         <h3>Gestion de projet</h3>
                         <p>Pilotage de projets SI avec méthodologies Agile et ITIL.</p>
                     </div>
                 </div>
-                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up">
+                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up" data-aos-once="true">
                     <div>
-                        <img src="/STRATEGIST-ADVISORY/img-stock/code.png" alt="">
+                        <img src="/STRATEGIST-ADVISORY/img-stock/code.png"
+                            alt="Icône de développement d’application illustrant la création de solutions logicielles personnalisées pour répondre aux besoins métiers">
                     </div>
                     <div>
                         <h3>Conception d'application</h3>
                         <p>Des applications qui répondent à vos enjeux métiers.</p>
                     </div>
                 </div>
-                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up">
+                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up" data-aos-once="true">
                     <div>
-                        <img src="/STRATEGIST-ADVISORY/img-stock/dataIA.png" alt="">
+                        <img src="/STRATEGIST-ADVISORY/img-stock/dataIA.png"
+                            alt="Icône data et intelligence artificielle pour l’analyse et la valorisation des données">
                     </div>
                     <div>
                         <h3>Data/IA</h3>
                         <p>Des solutions data pensées pour vos enjeux métiers.</p>
                     </div>
                 </div>
-                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up">
+                <div class="services-card col-12 col-md-6 col-lg-3 border" data-aos="fade-up" data-aos-once="true">
                     <div>
-                        <img src="/STRATEGIST-ADVISORY/img-stock/dataOps.png" alt="">
+                        <img src="/STRATEGIST-ADVISORY/img-stock/dataOps.png"
+                            alt="Icône dataOps illustrant l’automatisation, la fiabilisation et l’industrialisation des flux data">
                     </div>
                     <div>
                         <h3>DataOps</h3>
@@ -152,25 +161,28 @@
 
 
     <!-- Values -->
-    <section class="valeur-section">
+    <section class="valeur-section" tabindex="9">
         <h2 class="section-title" data-aos="fade-up" data-aos-once="true">Nos Valeurs</h2>
         <div class="valeur-container row">
             <div class="valeurs-card col-10 col-lg-3 border">
-                <img src="/STRATEGIST-ADVISORY/img-stock/loupe.png" alt="">
+                <img src="/STRATEGIST-ADVISORY/img-stock/loupe.png"
+                    alt="icone de transparence illustrant l’engagement de Strategist Advisory à pratiquer une transparence totale dans ses relations avec ses clients">
                 <h3>Transparence</h3>
                 <p>Nous pratiquons une transparence totale dans nos relations avec nos clients, en fournissant des
                     informations claires et accessibles sur nos processus, nos réalisations et nos objectifs.</p>
             </div>
 
             <div class="valeurs-card col-10 col-lg-3 border">
-                <img src="/STRATEGIST-ADVISORY/img-stock/innovate.png" alt="">
+                <img src="/STRATEGIST-ADVISORY/img-stock/innovate.png"
+                    alt="icone d’innovation illustrant l’engagement de Strategist Advisory à adopter les dernières technologies et à proposer des approches novatrices pour résoudre les défis complexes de ses clients">
                 <h3>Innovation</h3>
                 <p>Nous encourageons l'innovation en adoptant les dernières technologies et en proposant des
                     approches novatrices pour résoudre les défis complexes de nos clients.</p>
             </div>
 
             <div class="valeurs-card col-10 col-lg-3 border">
-                <img src="/STRATEGIST-ADVISORY/img-stock/chart.png" alt="">
+                <img src="/STRATEGIST-ADVISORY/img-stock/chart.png"
+                    alt="icone de performance illustrant l’engagement de Strategist Advisory à fournir des résultats mesurables et à créer un impact positif pour ses clients">
                 <h3>Impact</h3>
                 <p>Nous nous engageons à créer un impact positif durable dans les domaines de la cybersécurité, de la
                     data et de l'IA, en apportant des solutions qui transforment réellement les organisations.</p>
@@ -224,11 +236,10 @@
 
 
     <!-- Formulaire de recrutement -->
-    <section class="Recrutement-section" id="Recrutement">
+    <section class="Recrutement-section" id="Recrutement" tabindex="10">
         <h2 class="section-title">Recrutement</h2>
 
         <div class="container-contact">
-            <!-- Texte -->
             <div class="contact-info">
                 <h2>Vous voulez nous rejoindre ?</h2>
                 <p>
@@ -236,37 +247,36 @@
                     Si vous êtes motivé(e), n’hésitez pas à nous contacter.
                 </p>
             </div>
-
             <!-- Formulaire -->
             <div class="contact-form">
                 <h2>Contactez-nous</h2>
 
-                <form class="form">
+                <form class="form" action="https://formspree.io/f/mreaeako" method="POST">
                     <div class="grid-row">
                         <div class="form-group">
                             <label for="nom">Nom</label>
-                            <input type="text" id="nom" placeholder="Votre nom" required>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
                         </div>
 
                         <div class="form-group">
                             <label for="prenom">Prénom</label>
-                            <input type="text" id="prenom" placeholder="Votre prénom" required>
+                            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
                         </div>
                     </div>
                     <div class="grid-row">
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Votre email" required>
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
                         </div>
                         <div class="form-group">
-                            <label for="url">Lien du CV</label>
-                            <input type="url" name="Lien du CV" placeholder="Lien Google Drive du CV" required>
+                            <label>Lien du CV</label>
+                            <input type="url" name="CV" placeholder="Lien Google Drive du CV" required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
                     </div>
                     <button type="submit" class="btn-submit">Envoyer</button>
                 </form>
@@ -277,13 +287,20 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-hero">
-                <h4>Vous avez une idée?</h4>
-                <h2>Contactez-nous pour discuter de votre projet.</h2>
+                <h2>Vous avez une idée?</h2>
+                <h3>Contactez-nous pour discuter de votre projet.</h3>
                 <button onclick="window.location.href='/STRATEGIST-ADVISORY/Contact.html'">Contactez-nous</button>
             </div>
             <div class="footer-links">
+                <div class="footer-infos">
+                    <h2><strong>Besoin d'aide?</strong></h2>
+                    <h3><strong style="color: orange;">Téléphone :</strong> +33 6 73 89 69 72</h3>
+                    <h3><strong style="color: orange;">Email : </strong> contact@strategist-advisory.com</h3>
+                    <h3><strong style="color: orange;">Adresse : </strong>78, Avenue des Champs-Élysées, Bureau 326,
+                        75008 Paris.</h3>
+                </div>
                 <div>
-                    <h4><strong>Liens rapides</strong></h4>
+                    <h2><strong>Liens rapides</strong></h2>
                     <a href="/STRATEGIST-ADVISORY/Accueil.html" style="color: orange;">Accueil</a>
                     <a href="/STRATEGIST-ADVISORY/Accueil.html#A-Propos">A Propos</a>
                     <a href="/STRATEGIST-ADVISORY/Accueil.html#services">Services</a>
@@ -291,12 +308,7 @@
                     <a href="/STRATEGIST-ADVISORY/Blog.html">Blog</a>
                 </div>
                 <div>
-                    <h4><strong>Besoin d'aide?</strong></h4>
-                    <h6>Téléphone : +33 6 73 89 69 72</p>
-                        <h6>Email :
-                </div>
-                <div>
-                    <h4><strong>Suivez-nous</strong></h4>
+                    <h2><strong>Suivez-nous</strong></h2>
                     <a href="">LinkedIn</a>
                     <a href="">Twitter</a>
                     <a href="">Facebook</a>
@@ -306,11 +318,36 @@
         </div>
         <p>&copy;STRATEGIST ADVISORY. Tous droits réservés.</p>
     </footer>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "ProfessionalService",
+            "name": "STRATEGIST ADVISORY",
+            "description": "Cabinet de conseil spécialisé en SI, Data, Cloud et transformation digitale. Accompagnement sur mesure et expertise métier.",
+            "url": "https://www.strategist-advisory.io/",
+            "sameAs": [
+                "https://www.linkedin.com/company/strategist-advisory",
+                "https://twitter.com/strategistadv",
+                "https://www.facebook.com/strategistadvisory"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+33 6 73 89 69 72",
+                "contactType": "Customer Service",
+                "email": "contact@strategist-advisory.com"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "78 Avenue des Champs-Élysées",
+                "addressLocality": "Paris",
+                "postalCode": "75008",
+                "addressCountry": "FR"
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
-    <script src="/STRATEGIST-ADVISORY/jsfile.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
