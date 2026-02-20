@@ -177,6 +177,12 @@ section {
     .a-propos-content {
         grid-template-columns: 1fr;
     }
+    .a-propos-texts p {
+        font-size: 18px;
+    }
+    .a-propos-list li {
+        font-size: 20px;
+    }
 }
 
 .a-propos-texts p {
@@ -565,6 +571,12 @@ footer {
     .footer-links {
         flex-direction: column;
     }
+    .footer-hero h3 {
+    font-size: 30px;
+
+}
+
+
 }
 
 footer p {
