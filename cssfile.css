@@ -38,7 +38,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -76,7 +76,7 @@ section {
     position:sticky;
     top: 0;
     background-color: #f8f9fb;
-    z-index: 1;
+    z-index: 2;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -271,8 +271,31 @@ section {
 }
 
 
+/* Filter Buttons Styles */
+.filter-buttons {
+    padding-left: 5%;
+    background-color: #f8f9fb;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.filters div {
+    padding: 5px 20px;
+    border: solid 1px #e0e0e0;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 /* Articles Section Styles */
 .articles-section {
+    padding-top: 20px;
     padding-left: 5%;
     padding-right: 5%;
     background-color: #f8f9fb;
@@ -282,6 +305,7 @@ section {
     padding: 50px 20px;
     justify-content: space-evenly;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -289,7 +313,8 @@ section {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-
+    width: 25%;
+    border: solid 1px #e0e0e0;
 }
 
 .article-card img {
@@ -314,6 +339,12 @@ section {
     margin-bottom: 15px;
     text-decoration: none;
     color: rgba(0, 0, 255, 0.658);
+}
+
+.inactive {
+    width: 0;
+    height: 0;
+    display: none;
 }
 
 
