@@ -484,10 +484,6 @@ textarea {
     height: 30px;
 }
 
-
-
-
-
 /* Footer Styles */
 footer {
     background-color: #000000;
@@ -551,7 +547,7 @@ footer {
 .footer-links {
     padding-top: 40px;
     display: flex;
-    gap: 40px;
+    gap: 100px;
     margin-right: 5%;
     margin-left: 5%;
 }
@@ -576,7 +572,6 @@ footer {
 
 }
 
-
 }
 
 footer p {
@@ -585,6 +580,15 @@ footer p {
     font-size: 14px;
     text-decoration: none;
     margin: 0%;
+}
+
+.follow {
+    color: white;
+    font-size: 14px;
+}
+.end-footer {
+    display: flex;
+    margin-top: 20px;
 }
 
 .wip {
